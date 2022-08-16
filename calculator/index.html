@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wrapper">
+            <div class="display">
+                <input class="w100" type="text" id="display" placeholder="0">
+            </div>
+            <div class="buttons">
+                <button onclick="calculate(7)">7</button>
+                <button onclick="calculate(8)">8</button>
+                <button onclick="calculate(9)">9</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="calculate(4)">4</button>
+                <button onclick="calculate(5)">5</button>
+                <button onclick="calculate(6)">6</button>
+                <button onclick="calculate('+')">+</button>
+                <button onclick="calculate(1)">1</button>
+                <button onclick="calculate(2)">2</button>
+                <button onclick="calculate(3)">3</button>
+                <button onclick="calculate('-')">-</button>
+                <button onclick="calculate('.')">.</button>
+                <button onclick="calculate(0)">0</button>
+                <button onclick="calculate('/')">/</button>
+                <button onclick="calculate('*')">×</button>
+                <button class="w50" onclick="reset()" >RESET</button>
+                <button class="w50" onclick="result()">=</button>
+            </div>    
+        </div>
+    </div>
+
+    <script src="./index.js"></script>  
+      
+</body>
+</html>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 0;
+}
+
+.wrapper {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgb(82, 82, 82);
+}
+
+.buttons {
+    padding-top: 10px;
+}
+
+.buttons button {
+    padding: 12px 0;
+    font-size: 18px;
+    cursor: pointer;
+    width: 25%;
+}
+
+.display input {
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    text-align: end;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50% !important;
+}
+
+</style>
